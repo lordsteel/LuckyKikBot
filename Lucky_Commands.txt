@@ -19,7 +19,7 @@ Welcome Commands		Allows you to post a welcome message for new joiners
 +welcome message <none>		Disables the welcome message
 +welcome status			Shows the status of welcome commands
 	
-Cap Commands			Allows you to set a number of allowed users in your group. When the maximum number is reached and someone joins, the user who's been inactive for the longest time will be removed. The cap mode is disabled by default.
+Cap Commands			Allows you to set a number of allowed users in your group. When the maximum number is reached and someone joins, the user who's been 			 	     inactive for the longest time will be removed. The cap mode is disabled by default.
 +cap				Enables/Disables cap mode
 +cap users <number>		Sets the max <number> of users allowed in the group
 +cap message <message>		Shows <message> before replacing inactive member with new joiner
