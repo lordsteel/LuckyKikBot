@@ -66,21 +66,22 @@ Trigger Commands
 Trigger Mode Commands	
 +trigger			Enables/Disables Triggers
 +mode <mode_number>		Choose trigger mode 1/2/3
-+mode 1				Enables Normal Mode. Admins & users can create and trigger subs. Users can delete user subs, admins can delete all subs
++mode 1				Enables Normal Mode. Admins & users can create and trigger subs. 
+				Users can delete user subs, admins can delete all subs
 +mode 2				Enables Mixed Mode. Admins can create, Trigger and delete subs, users can only trigger subs
 +mode 3				Enables Admin Mode. Only admins can create, trigger and delete subs
 +trigger status			Shows the status of trigger commands
 	
 Create Trigger Commands	
-this > $gs <search_term>	When you say this, Lucky will respond with a randomly generated gif from top 10 search results of <search_term> on tenor.com
+this > $gs <search_term>	When you say this, Lucky will respond with a random tenor gif from top 10 search results of <search_term>
 this > $i			When you say this, Lucky will respond with the image you sent to the group within 3 minutes
 this > $g			When you say this, Lucky will respond with the gif you sent to the group within 3 minutes
 this > $v			When you say this, Lucky will respond with the video you sent to the group within 3 minutes
 this > $i [<text>]		When you say this, Lucky will respond with the <text> and the image you sent to the group within 3 minutes
 this > $g [<text>]		When you say this, Lucky will respond with the <text> and the gif you sent to the group within 3 minutes
 this > $v [<text>]		When you say this, Lucky will respond with the <text> and the video you sent to the group within 3 minutes
-this > 				that	Creates a normal trigger. When you say this, Lucky says that
-this >> that			Creates an admin trigger. this is only relevant in sub mode 1, as it ensures that normal users cannot delete this trigger
+this > that 			Creates a normal trigger. When you say this, Lucky says that
+this >> that			Creates an admin trigger. only relevant in mode 1, as it ensures that normal users cannot delete this trigger
 +trigger list			Shows all saved triggers of the group
 
 this >  $l <title>		When you say this, Lucky will respond with the link card with card title 
@@ -106,7 +107,8 @@ Control Commands
 	
 Remote Commands			Allows you to configure your group via PM. Remote works for all commands, 
 				only admins are able to configure and after 5 minutes of inactivity the remote access stops automatically. 
-				PM Lucky in your group and type as below to start and stop remote access (do not run +members #group_tag while using remote feature)
+				PM Lucky in your group and type as below to start and stop remote access 
+				(do not run +members #group_tag while using remote feature)
 start remote #group_tag		Starts the remote access
 stop remote			Stops the remote access manually
 	
@@ -116,14 +118,14 @@ Restore/Backup Commands		Allows you to create a backup and restore from previous
 +restore eden			Restores the adam/eve settings into lucky
 	
 Transfer Commands		Allows you to transfers your group settings from source group to another group. 
-				Replace #from_group with the hashtag of the source group and #to_group with the hashtag of the destination group. 
+				Replace #from_group with the hashtag of the source group and #to_group with the hashtag of destination group. 
 				You and Lucky must be admin in both groups. Every setting will be transferred, except the whitelist. 
 				Lucky will confirm the successful transfer in the destination group or give you an error if it was unsuccessful
 	
 +transfer #from_group #to_group	Transfers your group settings from source group #from_group to another group #to_group
 	
 Federation Commands		Allows you to ban a member from joining any of the group under your federation
-+fed				Shows stats of federation such as federation name along with number of groups added, banned users and members removed
++fed				Shows stats of federation such as federation name along with no. of groups added, banned users, members removed
 +fcreate <federation name>	Creates a federation <federation_name>
 +fjoin <fed_name>		Adds group to fedearation <fed_name>
 +fleave				Removes source group from federeation
@@ -134,7 +136,7 @@ Federation Commands		Allows you to ban a member from joining any of the group un
 +fban last kick			Bans last removed member
 +fban last ban			Bans last banned member
 	
-Global Ban Commands		Allows you to prohibit members from joining your group if the member is already banned in other groups with Lucky
+Global Ban Commands		Allows you to prohibit members from joining your group if member is already banned in other groups with Lucky
 +gban				Enables/Disables gban
 +gban <number>			Sets the <number> of groups in which a member must be banned in order not to be able to join a group with Lucky
 +gban status			Shows the status of global ban commands
@@ -150,13 +152,13 @@ Talkers/Lurkers Commands	Allows you to check the activity of group members
 +lurkers			Shows the list of recent lurkers in your group
 	
 History Commands		Allows you to check the number of messages/images/videos posted by the group members
-+history all			Shows first number of list of members on the history leaderboard, along with their number of messages/images/videos posted by them
-+history all <page>		Shows <page> number of list of members on the history leaderboard, along with their number of messages/images/videos posted by them
-+history top			Shows top 10 members of the history leaderboard, along with their number of messages/images/videos posted by them
-+history bottom			Shows bottom 10 members of the history leaderboard, along with their number of messages/images/videos posted by them
-+history <user_id>		Shows the history of member having <user_id> along with their first seen, last seen, last active, and number of messages/images/videos posted by them
++history all			Shows first number of list of members on the history leaderboard
++history all <page>		Shows <page> number of list of members on the history leaderboard
++history top			Shows top 10 members of the history leaderboard
++history bottom			Shows bottom 10 members of the history leaderboard
++history <user_id>		Shows the history of member having <user_id> along with their first seen, last seen, last active
 	
-Rank Commands			Allows you to start a rank leaderboard in your group. The more active a user is, the more points they will receive
+Rank Commands			Allows you to start a rank leaderboard in your group. The more active a user is, the more points they receive
 +rank				Enables/Disables the group rank leaderboard
 +rank status			Shows the status of rank commands
 +rank top			Shows top 10 members of the rank leaderboard
@@ -186,7 +188,7 @@ Leave Commands			Allows you to make Lucky leave the group (admin only command)
 	
 Management Commands	
 	
-Forward Commands		Allows members who are in the group for less than 12 hours, to post media during Kik jail by passing them on to Lucky
+Forward Commands		Allows members who are in the group for <12 hours, to post media during Kik jail by passing them on to Lucky
 +bypass				Enables/Disables media forwarding
 +bypass status			Shows the status of forward commands
 +forward			Enables an image to be forwarded within 2 minutes. PM Eve the image after saying the command in the group
@@ -238,7 +240,8 @@ Bot Commands
 	
 Group User ID Commands		Allows you to check the <user_id> of group members
 +members			In group, this shows a list of all members with their assigned number <user_id> for your group
-+members #group_tag		In PM, this shows a list of all members with their assigned <user_id> for your group having #group_tag (do not run while using remote feature)
++members #group_tag		In PM, this shows a list of all members with their assigned <user_id> for your group having #group_tag 
+				(do not run while using remote feature)
 	
 Group Stats Commands		Allows you to have insight about group statistics
 +stats				Shows activity stats along with the group name, group hash, owner, admin count, member count of your group
