@@ -19,7 +19,7 @@ Welcome Commands		Allows you to post a welcome message for new joiners
 +welcome message <none>		Disables the welcome message
 +welcome status			Shows the status of welcome commands
 	
-Cap Commands			Allows you to set a number of allowed users in your group. When the maximum number is reached and someone joins, 
+Cap Commands			Allows you to set a number of allowed users in your group. When max number is reached and someone joins, 
 				the user who's been inactive for the longest time will be removed. The cap mode is disabled by default.
 +cap				Enables/Disables cap mode
 +cap users <number>		Sets the max <number> of users allowed in the group
@@ -36,7 +36,7 @@ Silent Commands			Automatic removal of members who do not speak on joining
 	
 Noob Commands			Automatic removal of members that have only been registered for a certain number of days
 +noob				Enables/Disables noob filter for the group
-+noob days <number>		New members with accounts less than <number> days old will be removed by Lucky (these will be marked as "noob")
++noob days <number>		New members with accounts less than <number> days old will be removed by Lucky
 +noob message <message>		Shows <message> before removing "noob" members (include $d in <message> to show actual days on "noob" account)
 +noob message none		Disables the noob message
 +noob status			Shows the status of noob commands
@@ -125,7 +125,7 @@ Transfer Commands		Allows you to transfers your group settings from source group
 +transfer #from_group #to_group	Transfers your group settings from source group #from_group to another group #to_group
 	
 Federation Commands		Allows you to ban a member from joining any of the group under your federation
-+fed				Shows stats of federation such as federation name along with no. of groups added, banned users, members removed
++fed				Shows stats of federation such as fed name along with no. of groups added, banned users, members removed
 +fcreate <federation name>	Creates a federation <federation_name>
 +fjoin <fed_name>		Adds group to fedearation <fed_name>
 +fleave				Removes source group from federeation
@@ -138,7 +138,7 @@ Federation Commands		Allows you to ban a member from joining any of the group un
 	
 Global Ban Commands		Allows you to prohibit members from joining your group if member is already banned in other groups with Lucky
 +gban				Enables/Disables gban
-+gban <number>			Sets the <number> of groups in which a member must be banned in order not to be able to join a group with Lucky
++gban <number>			Sets the <number> of groups in which a member must be banned in order not to be able to join group with Lucky
 +gban status			Shows the status of global ban commands
 +gban last join			Adds the last joined member into global ban
 +gban last leave		Adds the last left member into global ban
