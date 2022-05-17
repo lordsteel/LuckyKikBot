@@ -14,6 +14,6 @@ Copyright (c) 2022, lordsteel
 
 All rights reserved.
 
-Licensed under [BSD 3-Clause "New" or "Revised" License](https://github.com/lordsteel/LuckyKikBot/blob/3b64a0568ac766277445fa574c48768b2e8dd029/LICENSE)
+Licensed under [BSD 3-Clause "New" or "Revised" License](LICENSE)
 
-All of my gists are licensed under the terms of the [BSD 3-Clause "New" or "Revised" License](https://github.com/lordsteel/LuckyKikBot/blob/3b64a0568ac766277445fa574c48768b2e8dd029/LICENSE) as well.
+All of my gists are licensed under the terms of the [BSD 3-Clause "New" or "Revised" License](LICENSE) as well.
